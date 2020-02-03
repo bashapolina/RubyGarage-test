@@ -1,0 +1,42 @@
+// Font
+$font-family: 'Nunito Sans', sans-serif;
+$font-size: 16px;
+$font-line-height: 1.5;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+// Size
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// Main color
+$bg-body: #f7f7f9;
+$bg-widget: #fff;
+$color-primary: #2566f2;
+$color-success: #29cb98;
+$color-error: #fc2249;
+$color-warning: #fc0;
+$color-info: #00c6ff;
+$white: #fff;
+$black: #000;
+
+// Font Color
+$font-color-primary: #000;
+$font-color-secondary: #9b9b9b;
+
+// Border Color
+$border-color: lighten(#000, 90%);
+$box-shadow: 0 2px 4px 0 rgba(129,143,157,.1);
+
+// Z-indexes
+$z-indexes: (
+  header: 100
+);
+
+// Animation
+$transition: all .3s;

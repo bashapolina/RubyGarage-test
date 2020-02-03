@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/Icomoon/icomoon.eot?b1lc62');
+	src: url('../fonts/Icomoon/icomoon.eot?b1lc62#iefix') format('embedded-opentype'),
+	url('../fonts/Icomoon/icomoon.ttf?b1lc62') format('truetype'),
+	url('../fonts/Icomoon/icomoon.woff?b1lc62') format('woff'),
+	url('../fonts/Icomoon/icomoon.svg?b1lc62#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+.icon, %font-icon {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: rem(24px);
+	@include size(rem(24px));
+}
+
+.icon-ic-checkbox-active:before {
+	content: '\e900';
+}
+.icon-ic-checkbox-normal:before {
+	content: '\e901';
+}
+.icon-ic-info:before {
+	content: '\e902';
+}
+.icon-ic-priority-arrow-down:before {
+	content: '\e903';
+}
+.icon-ic-priority-arrow-up:before {
+	content: '\e904';
+}

@@ -1,0 +1,30 @@
+mixin table-head__row(...items)
+  tr.table__row
+    each item in items
+      th.table__cell= item 
+
+mixin table-body__row(name, date, priority)
+  tr.table__row
+    td.table__cell.table__cell_name= name
+    td.table__cell.table__call_date= date
+    if(priority === 'High')
+      td.table__cell.table__cell_priority.table__cell_high= priority
+    else if(priority === 'Medium')
+      td.table__cell.table__cell_priority.table__cell_medium= priority
+    else if(priority === 'Low')
+      td.table__cell.table__cell_priority.table__cell_low= priority
+
+mixin table-body__row_completed(name, date, priority)
+  tr.table__row.table__row_completed
+    td.table__cell.table__cell_name= name
+    td.table__cell.table__call_date= date
+    if(priority === 'High')
+      td.table__cell.table__cell_priority.table__cell_high= priority
+    else if(priority === 'Medium')
+      td.table__cell.table__cell_priority.table__cell_medium= priority
+    else if(priority === 'Low')
+      td.table__cell.table__cell_priority.table__cell_low= priority
+
+mixin icon(name)
+  svg(class="icon icon-" + name)
+    use(xlink:href="assets/img/icons.svg#" + name)

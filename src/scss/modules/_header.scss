@@ -1,0 +1,36 @@
+.page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: $bg-widget;
+	padding: 0 rem(16px);
+	height: rem(68px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: $box-shadow;
+	z-index: map-get($z-indexes, header);
+	@include media-breakpoint-up(md) {
+		padding-left: rem(20px);
+		padding-right: rem(20px);
+	}
+}
+.logo {
+	&__img {
+		@include size(rem(154px), rem(32px));
+		vertical-align: top;
+	}
+}
+.link {
+	color: $font-color-secondary;
+	&:hover {
+		color: #6f6f6f;
+		transition: $transition;
+	}
+	.icon {
+		margin-right: rem(8px);
+		vertical-align: top;
+		display: inline-block;
+	}
+}
